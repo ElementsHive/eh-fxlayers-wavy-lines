@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive 2D Waves - Web Worker</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1 style="position: relative; z-index: 10; color: white; text-align: center; padding: 2rem;">Interactive 2D Waves (Web Worker)</h1>
+      <div style="position: relative; z-index: 10; text-align: center; padding: 1rem;">
+        <button id="toggle-worker" style="padding: 0.5rem 1rem; margin: 0.5rem; background: #333; color: white; border: 1px solid #666; border-radius: 4px; cursor: pointer;">Toggle Worker Mode</button>
+        <span id="worker-status" style="color: white; margin-left: 1rem;">Worker: Enabled</span>
+      </div>
+      <div id="waves-container" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 1;"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
